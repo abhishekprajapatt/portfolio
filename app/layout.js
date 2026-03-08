@@ -28,13 +28,13 @@ export const metadata = {
   description:
     "Full Stack Developer building scalable enterprise applications with Java Spring Boot, Node.js, React, and modern web technologies. Also skilled in AI/ML and deep systems architecture.",
   keywords:
-    "Full Stack Developer, Java Spring Boot, Node.js, React, Next.js, Web Development, JavaScript, TypeScript, AI/ML, Portfolio, Abhishek Prajapati",
-  metadataBase: new URL("https://abhishek-g.vercel.app/"),
+    "Full Stack Developer, Java Spring Boot, Node.js, React, Next.js, Web Development, JavaScript, TypeScript, AI/ML, Portfolio, Abhishek Prajapatt",
+  metadataBase: new URL("https://abhishekeng.vercel.app/"),
   openGraph: {
     title: "Abhishek Prajapatt | Deep Systems Intelligence Engineer.",
     description:
       "Building scalable applications with Java Spring Boot, Node.js, and React. Also skilled in AI/ML and deep systems.",
-    url: "https://abhishek-g.vercel.app/",
+    url: "https://abhishekeng.vercel.app/",
     siteName: "Abhishek's Portfolio",
     images: [
       {
@@ -48,10 +48,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Abhishek Prajapati | Deep Systems Intelligence Engineer.",
+    title: "Abhishek Prajapatt | Deep Systems Intelligence Engineer.",
     description:
       "Building scalable applications with Java Spring Boot, Node.js, React, and AI/ML expertise.",
-    creator: "@AbhishekPrajapati",
+    creator: "@AbhishekPrajapatt",
     images: ["/og-image.png"],
   },
   icons: {
@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="abhishekprajapatt" href="/abhishekprajapatt.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <script
           type="application/ld+json"
@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Abhishek Prajapatt",
-              url: "https://abhishek-g.vercel.app",
+              url: "https://abhishekeng.vercel.app",
               jobTitle: "Deep Systems Intelligence Engineer",
               sameAs: [
                 "https://github.com/abhishekprajapatt",
