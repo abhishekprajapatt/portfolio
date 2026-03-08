@@ -13,7 +13,7 @@ import { FaCheck } from "react-icons/fa6";
 import { logos1, logos2, logos3 } from "@/constants/skills";
 import Image from "next/image";
 
-export function Highlights() {
+function Highlights() {
   return (
     <section
       id="highlights"
@@ -39,6 +39,8 @@ export function Highlights() {
     </section>
   );
 }
+
+export default Highlights;
 
 // Shared motion logo grid
 const renderLogoGrid = (logos) => (

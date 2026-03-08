@@ -5,6 +5,7 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+  preload: true,
 });
 
 const syne = Syne({
@@ -12,7 +13,15 @@ const syne = Syne({
   display: "swap",
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-syne",
+  preload: true,
 });
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export const metadata = {
   title: "Abhishek Prajapatt | Deep Systems Intelligence Engineer.",
