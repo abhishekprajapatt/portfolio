@@ -1,0 +1,21 @@
+{
+  "name": "Abhishek Prajapatt | Deep Systems Intelligence Engineer.",
+  "short_name": "Abhishek Dev",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "Portfolio of Abhishek Prajapatt – Deep Systems Intelligence Engineer",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/abhishekprajapatt.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
