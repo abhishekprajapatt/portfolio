@@ -285,9 +285,9 @@ const items = [
     title: "Lightning Fast",
     description: (
       <span>
-        Enterprise-grade backends with Spring Boot microservices paired with
-        optimized React frontends for exceptional performance and user
-        experience.
+        Full Stack systems with Java Spring Boot backends and Angular, React,
+        (Next.js + Node.js) frontends. RESTful APIs, microservices, and
+        optimized UI for exceptional performance.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -311,7 +311,8 @@ const items = [
     title: "Scalable Architecture",
     description: (
       <span>
-        {/* Microservices, containerization, and cloud-ready infrastructure. */}
+        Java Spring Boot backend microservices with Node.js/Express frontend
+        APIs. Docker containerization.
       </span>
     ),
     header: <SkeletonFour />,

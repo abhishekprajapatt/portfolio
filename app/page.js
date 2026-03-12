@@ -15,6 +15,10 @@ const Highlights = dynamic(() => import("@/sections/Highlights"), {
   loading: () => <div className="min-h-screen bg-black" />,
 });
 
+const Services = dynamic(() => import("@/sections/Services"), {
+  loading: () => <div className="min-h-screen bg-black" />,
+});
+
 const Projects = dynamic(() => import("@/sections/Projects"), {
   loading: () => <div className="min-h-screen bg-black" />,
 });
@@ -40,6 +44,9 @@ export default function Home() {
         <About />
       </Suspense>
       <Highlights />
+      <Suspense fallback={<div className="min-h-screen bg-black" />}>
+        <Services />
+      </Suspense>
       <ScrollingText />
       <Suspense fallback={<div className="min-h-screen bg-black" />}>
         <Projects />

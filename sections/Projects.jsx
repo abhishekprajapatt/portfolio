@@ -15,7 +15,7 @@ const Projects = () => {
           Works
         </h2>
         <div className="space-y-0">
-          {PROJECTS.map(({ name, image, href }, index) => (
+          {PROJECTS.map(({ name, image, href, description }, index) => (
             <a
               href={href}
               key={name}

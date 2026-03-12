@@ -270,7 +270,7 @@ const Hero = () => {
                 },
               }}
             >
-              {"Deep Systems Intelligence Engineer."
+              {"Java Backend Developer | Spring Boot Specialist"
                 .split(" ")
                 .map((word, idx) => (
                   <motion.span
@@ -296,9 +296,22 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
             >
-              Currently looking for Full Stack (Java + Node.js) development
-              opportunities
+              Currently looking for Backend development opportunities with Java,
+              Spring Boot & Microservices.
             </motion.p>
+
+            {/* Available for work badge */}
+            <motion.div
+              className="absolute right-8 bottom-8 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 backdrop-blur-sm"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 1.4, duration: 0.6 }}
+            >
+              <div className="h-2 w-2 animate-pulse rounded-full bg-red-500" />
+              <span className="text-xs font-medium text-white sm:text-sm">
+                Available for work
+              </span>
+            </motion.div>
           </motion.div>
         </div>
       </div>

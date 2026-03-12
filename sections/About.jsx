@@ -77,12 +77,18 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
               viewport={{ once: true }}
             >
-              Architecting enterprise-grade backends with Java Spring Boot,
-              scalable microservices, and production-ready frontends using
-              Angular, Next.Js/React and Node.js — owning the full product
-              lifecycle from system design to deployment. Passionate about
-              writing clean, performant code and engineering solutions that
-              scale under real-world pressure.
+              I specialize in building robust, scalable backend systems using{" "}
+              <span className="font-semibold text-white">
+                Java, Spring Boot & Microservices
+              </span>
+              . Expert in RESTful API design, database optimization, system
+              architecture, and production-grade applications. Proficient with{" "}
+              <span className="font-semibold text-white">
+                Angular, React & Next.js
+              </span>{" "}
+              for full-stack capabilities. Passionate about clean code,
+              performance optimization, and delivering reliable systems under
+              real-world production pressure.
             </motion.p>
 
             {/* Button */}

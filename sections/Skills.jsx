@@ -2,17 +2,16 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { SKILLS1, SKILLS2, SKILLS3, SKILLS4 } from "@/constants/skills";
+import { SKILLS1, SKILLS2, SKILLS3 } from "@/constants/skills";
 
 const Skills = () => {
   const [hoveredRow, setHoveredRow] = useState(null);
 
-  // Define all skill rows
+  // Define all skill rows with labels
   const skillRows = [
-    { skills: SKILLS1, direction: "left" },
-    { skills: SKILLS2, direction: "right" },
-    { skills: SKILLS3, direction: "left" },
-    { skills: SKILLS4, direction: "right" },
+    { skills: SKILLS1, direction: "right", label: "Backend Development" },
+    { skills: SKILLS2, direction: "left", label: "Frontend & Full Stack" },
+    { skills: SKILLS3, direction: "right", label: "Tools & DevOps" },
   ];
 
   const SkillCard = ({ skill }) => (
@@ -38,35 +37,44 @@ const Skills = () => {
     </div>
   );
 
-  const SkillRow = ({ skills, direction = "left", rowIndex }) => {
+  const SkillRow = ({ skills, direction = "left", rowIndex, label }) => {
     const isHovered = hoveredRow === rowIndex;
 
     return (
-      <div
-        className="relative mb-4 md:mb-6"
-        onMouseEnter={() => setHoveredRow(rowIndex)}
-        onMouseLeave={() => setHoveredRow(null)}
-      >
-        {/* Gradient Overlays */}
-        <div className="pointer-events-none absolute top-0 left-0 z-10 h-full w-12 bg-gradient-to-r from-black via-black/80 to-transparent md:w-16"></div>
-        <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-12 bg-gradient-to-l from-black via-black/80 to-transparent md:w-16"></div>
+      <div className="space-y-2 md:space-y-3">
+        {/* Section Label */}
+        {label && (
+          <h3 className="px-6 text-sm font-semibold text-gray-400 md:px-8 md:text-base lg:text-lg">
+            {label}
+          </h3>
+        )}
 
-        {/* Scrollable Container */}
-        <div className="scrollbar-hide overflow-x-auto">
-          <div
-            className={`flex space-x-4 px-6 md:space-x-6 md:px-8 animate-scroll-${direction}`}
-            style={{
-              width: "max-content",
-              animationDuration: "30s",
-              animationTimingFunction: "linear",
-              animationIterationCount: "infinite",
-              animationPlayState: isHovered ? "paused" : "running",
-            }}
-          >
-            {/* Duplicate skills for seamless loop */}
-            {[...skills, ...skills].map((skill, index) => (
-              <SkillCard key={`${skill.name}-${index}`} skill={skill} />
-            ))}
+        <div
+          className="relative mb-4 md:mb-6"
+          onMouseEnter={() => setHoveredRow(rowIndex)}
+          onMouseLeave={() => setHoveredRow(null)}
+        >
+          {/* Gradient Overlays */}
+          <div className="pointer-events-none absolute top-0 left-0 z-10 h-full w-12 bg-gradient-to-r from-black via-black/80 to-transparent md:w-16"></div>
+          <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-12 bg-gradient-to-l from-black via-black/80 to-transparent md:w-16"></div>
+
+          {/* Scrollable Container */}
+          <div className="scrollbar-hide overflow-x-auto">
+            <div
+              className={`flex space-x-4 px-6 md:space-x-6 md:px-8 animate-scroll-${direction}`}
+              style={{
+                width: "max-content",
+                animationDuration: "30s",
+                animationTimingFunction: "linear",
+                animationIterationCount: "infinite",
+                animationPlayState: isHovered ? "paused" : "running",
+              }}
+            >
+              {/* Duplicate skills for seamless loop */}
+              {[...skills, ...skills].map((skill, index) => (
+                <SkillCard key={`${skill.name}-${index}`} skill={skill} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -90,6 +98,7 @@ const Skills = () => {
               key={index}
               skills={row.skills}
               direction={row.direction}
+              label={row.label}
               rowIndex={index}
             />
           ))}

@@ -24,16 +24,16 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: "Abhishek Prajapatt | Deep Systems Intelligence Engineer.",
+  title: "Abhishek Prajapatt | Java Full Stack & Backend Developer",
   description:
-    "Full Stack Developer building scalable enterprise applications with Java Spring Boot, Node.js, React, and modern web technologies. Also skilled in AI/ML and deep systems architecture.",
+    "Full Stack & Backend Developer: Java Spring Boot backends with Angular, React, (Next.js + Node.js) frontends. Building scalable enterprise applications with modern web technologies.",
   keywords:
-    "Full Stack Developer, Java Spring Boot, Node.js, React, Next.js, Web Development, JavaScript, TypeScript, AI/ML, Portfolio, Abhishek Prajapatt",
+    "Full Stack Developer, Backend Developer, Java Spring Boot, Node.js Express, React, Next.js, Angular, Web Development, JavaScript, TypeScript, Microservices, Portfolio, Abhishek Prajapatt",
   metadataBase: new URL("https://abhishekeng.vercel.app/"),
   openGraph: {
-    title: "Abhishek Prajapatt | Deep Systems Intelligence Engineer.",
+    title: "Abhishek Prajapatt | Java Full Stack & Backend Developer",
     description:
-      "Building scalable applications with Java Spring Boot, Node.js, and React. Also skilled in AI/ML and deep systems.",
+      "Building scalable applications with Java Spring Boot backend and Angular, React, (Next.js + Node.js) frontend. Available for Full Stack and Backend roles.",
     url: "https://abhishekeng.vercel.app/",
     siteName: "Abhishek's Portfolio",
     images: [
@@ -41,16 +41,16 @@ export const metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Abhishek Prajapatt | Deep Systems Intelligence Engineer",
+        alt: "Abhishek Prajapatt | Java Full Stack Developer",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Abhishek Prajapatt | Deep Systems Intelligence Engineer.",
+    title: "Abhishek Prajapatt | Java Full Stack & Backend Developer",
     description:
-      "Building scalable applications with Java Spring Boot, Node.js, React, and AI/ML expertise.",
+      "Full Stack & Backend Developer: Building scalable applications - Java Spring Boot backend, Angular, React, (Next.js + Node.js) frontend.",
     creator: "@AbhishekPrajapatt",
     images: ["/og-image.png"],
   },
@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               name: "Abhishek Prajapatt",
               url: "https://abhishekeng.vercel.app",
-              jobTitle: "Deep Systems Intelligence Engineer",
+              jobTitle: "Java Full Stack & Backend Developer",
               sameAs: [
                 "https://github.com/abhishekprajapatt",
                 "https://www.linkedin.com/in/abhishekprajapatt",

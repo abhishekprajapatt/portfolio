@@ -252,7 +252,7 @@ const Contact = () => {
           <div className="order-1 space-y-6 md:space-y-8 xl:order-2">
             <div className="relative h-56 w-full overflow-hidden rounded-xl border border-gray-700 shadow-lg md:h-72 lg:h-80 xl:h-96">
               <Image
-                src="/setup.webp"
+                src="/settup.webp"
                 alt="Contact"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 600px"

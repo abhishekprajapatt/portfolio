@@ -64,7 +64,7 @@ export default function ProjectModal({ modal, projects }) {
       variants={scaleAnimation}
       initial="initial"
       animate={active ? "enter" : "closed"}
-      className="pointer-events-none absolute z-50 flex hidden h-72 w-96 items-center justify-center overflow-hidden border border-gray-700 opacity-0 shadow-2xl transition-opacity duration-300 md:flex md:opacity-100"
+      className="pointer-events-none absolute z-50 flex hidden h-96 w-96 flex-col items-center justify-center overflow-hidden rounded-2xl border border-gray-700 opacity-0 shadow-2xl transition-opacity duration-300 md:flex md:opacity-100"
     >
       <div
         style={{ top: `${index * -100}%` }}
@@ -72,14 +72,14 @@ export default function ProjectModal({ modal, projects }) {
       >
         {projects.map((project, projectIndex) => {
           const backgroundColors = [
-            "bg-gradient-to-br from-purple-500 to-pink-500",
-            "bg-gradient-to-br from-blue-500 to-cyan-500",
-            "bg-gradient-to-br from-green-500 to-emerald-500",
-            "bg-gradient-to-br from-orange-500 to-red-500",
-            "bg-gradient-to-br from-indigo-500 to-purple-500",
-            "bg-gradient-to-br from-teal-500 to-blue-500",
-            "bg-gradient-to-br from-rose-500 to-pink-500",
-            "bg-gradient-to-br from-amber-500 to-orange-500",
+            "bg-gradient-to-br from-purple-600 via-purple-700 to-pink-500",
+            "bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-900",
+            "bg-gradient-to-br from-gray-600 via-gray-700 to-gray-900",
+            "bg-gradient-to-br from-orange-600 via-orange-700 to-red-500",
+            "bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-900",
+            "bg-gradient-to-br from-teal-600 via-teal-700 to-blue-900",
+            "bg-gradient-to-br from-rose-600 via-rose-700 to-pink-900",
+            "bg-gradient-to-br from-amber-600 via-amber-700 to-orange-900",
           ];
 
           const bgColor =
@@ -87,10 +87,11 @@ export default function ProjectModal({ modal, projects }) {
 
           return (
             <div
-              className={`flex h-full w-full items-center justify-center p-4 ${bgColor}`}
+              className={`flex h-full w-full flex-col items-center justify-start rounded-2xl p-1 ${bgColor}`}
               key={`modal_${projectIndex}`}
             >
-              <div className="relative h-52 w-80 overflow-hidden shadow-lg">
+              {/* Image */}
+              <div className="relative mb-4 h-52 w-full overflow-hidden rounded-xl px-2 shadow-lg">
                 <Image
                   src={project.image}
                   alt={project.name}
@@ -99,6 +100,16 @@ export default function ProjectModal({ modal, projects }) {
                   style={{ objectFit: "cover" }}
                   loading="lazy"
                 />
+              </div>
+
+              {/* Description */}
+              <div className="w-full flex-1 overflow-hidden px-2">
+                <h3 className="mb-2 text-sm font-semibold text-white">
+                  {project.name}
+                </h3>
+                <p className="line-clamp-5 text-xs leading-relaxed text-gray-100">
+                  {project.description}
+                </p>
               </div>
             </div>
           );

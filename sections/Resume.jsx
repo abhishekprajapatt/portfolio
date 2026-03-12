@@ -74,17 +74,18 @@ const Resume = () => {
               <p>
                 I am a passionate full-stack developer with expertise in
                 building scalable enterprise applications using Java Spring Boot
-                for backend and Angular, Next.js/React for frontend development.
+                for backend and Angular, React, (Next.js + Node.js) for frontend
+                development.
               </p>
               <p>
                 My resume highlights proficiency in microservices, RESTful APIs,
                 database management (MySQL, MongoDB), and modern DevOps
-                practices. Additionally skilled in Artificial Intelligence – a unique edge for
-                complex problems.
+                practices. Experienced in building scalable enterprise-grade
+                applications.
               </p>
               <p>
                 Whether you need a backend specialist, full-stack developer, or
-                someone who can architect intelligent systems, I deliver
+                someone who can architect complex systems, I deliver
                 production-ready solutions.
               </p>
             </div>
@@ -92,7 +93,7 @@ const Resume = () => {
 
           {/* Right Side - Resume Card */}
           <motion.div
-            className="group/bento relative flex w-full flex-col justify-between space-y-4 rounded-xl border border-gray-700 bg-black p-6 transition duration-200 hover:shadow-none md:p-8"
+            className="group/bento relative flex w-full flex-col justify-between space-y-0.5 rounded-xl border border-gray-700 bg-black p-6 transition duration-200 hover:shadow-none md:p-8"
             variants={itemVariants}
           >
             <GlowingEffect
@@ -116,14 +117,14 @@ const Resume = () => {
 
               <div className="mb-2 flex items-center gap-2">
                 <div className="font-head text-xl font-semibold text-white md:text-2xl lg:text-3xl">
-                  Java Full Stack Developer
+                  Java Full Stack / Backend Developer
                 </div>
               </div>
 
               <div className="text-sm font-normal text-gray-300 md:text-base">
                 Download my Full Stack resume showcasing expertise in Java
-                Spring Boot backend, Angular, Next.js/React frontend,
-                microservices.
+                Spring Boot backend, Angular, React, (Next.js + Node.js)
+                frontend, microservices.
               </div>
             </div>
 
@@ -158,10 +159,13 @@ const Resume = () => {
           variants={itemVariants}
         >
           <p className="text-sm text-gray-400 md:text-base">
-            � <strong className="text-white">Looking for Opportunities:</strong>{" "}
-            Open to Full Stack (Java + Node.js), Backend (Java Spring Boot),
-            Frontend (Anular, Next.Js, React). Ready to bring innovation and practical full-stack
-            capabilities!
+            🔍 <strong className="text-white">Currently Looking For:</strong>{" "}
+            Full Stack or Backend opportunities:{" "}
+            <strong>Java Spring Boot backend</strong> with{" "}
+            <strong>Angular, React, (Next.js + Node.js) frontend</strong> for
+            Full Stack roles. Building complete applications from API layer to
+            UI, or specialized backend systems. Skilled in scalable system
+            architecture and advanced design patterns.
           </p>
         </motion.div>
       </motion.div>
